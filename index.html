@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page với Bootstrap 5 & Hình Ảnh</title>
+    <!-- Nhúng CSS Bootstrap 5 qua CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Nhúng Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- 1. Hero / Banner Section (Tự xây dựng chuẩn Bootstrap 5 thay thế Jumbotron) -->
+    <header class="bg-dark text-white text-center py-5 position-relative" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500?random=10') center/cover no-repeat;">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold mb-3">Giải Pháp Công Nghệ Đột Phá</h1>
+            <p class="lead mb-4 text-light">Nâng tầm doanh nghiệp của bạn với nền tảng quản lý hiện đại, tối ưu và linh hoạt nhất.</p>
+            <a href="#cta" class="btn btn-primary btn-lg px-4 me-2 fw-bold shadow">Đăng Ký Ngay</a>
+            <a href="#about" class="btn btn-outline-light btn-lg px-4 fw-semibold">Tìm Hiểu Thêm</a>
+        </div>
+    </header>
+
+    <!-- 2. Giới Thiệu Sản Phẩm / Dịch Vụ (Hình ảnh + Nội dung) -->
+    <section id="about" class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <!-- Lớp img-fluid giúp hình ảnh co giãn linh hoạt theo thiết bị -->
+                <img src="https://picsum.photos/600/400?random=1" class="img-fluid rounded-3 shadow" alt="Giới thiệu sản phẩm">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3 text-primary">Về Sản Phẩm Của Chúng Tôi</h2>
+                <p class="lead text-secondary">Giải pháp tiên phong giúp tự động hóa quy trình làm việc và tối ưu hóa hiệu suất của đội ngũ.</p>
+                <p class="text-muted">Với giao diện thân thiện, khả năng tích hợp linh hoạt và tính bảo mật cao, sản phẩm của chúng tôi tự tin đồng hành cùng sự phát triển bền vững của doanh nghiệp bạn trong kỷ nguyên số.</p>
+                <a href="#features" class="btn btn-outline-primary mt-2">Khám phá các tính năng &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Danh Sách Tính Năng (Row gồm 4 cột với Icon + Tiêu đề + Mô tả) -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tính Năng Nổi Bật</h2>
+                <p class="text-muted">Những ưu điểm vượt trội mang lại giá trị thiết thực cho bạn</p>
+            </div>
+            <div class="row g-4">
+                
+                <!-- Tính năng 1 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="card p-4 h-100 border-0 shadow-sm rounded-3">
+                        <div class="display-4 text-primary mb-3">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Tốc Độ Tối Ưu</h4>
+                        <p class="text-muted small mb-0">Xử lý dữ liệu tức thì với thời gian phản hồi cực nhanh trên mọi nền tảng.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="card p-4 h-100 border-0 shadow-sm rounded-3">
+                        <div class="display-4 text-success mb-3">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Bảo Mật Bắt Buộc</h4>
+                        <p class="text-muted small mb-0">Mã hóa dữ liệu nhiều lớp đạt chuẩn quốc tế bảo vệ an toàn tuyệt đối.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="card p-4 h-100 border-0 shadow-sm rounded-3">
+                        <div class="display-4 text-warning mb-3">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Responsive 100%</h4>
+                        <p class="text-muted small mb-0">Hiển thị mượt mà và tối ưu trải nghiệm trên mọi kích thước màn hình.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="card p-4 h-100 border-0 shadow-sm rounded-3">
+                        <div class="display-4 text-danger mb-3">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Hỗ Trợ 24/7</h4>
+                        <p class="text-muted small mb-0">Đội ngũ kỹ thuật chuyên nghiệp luôn sẵn sàng đồng hành cùng bạn.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Kêu Gọi Hành Động (CTA Section) -->
+    <section id="cta" class="bg-primary text-white text-center py-5">
+        <div class="container py-3">
+            <h2 class="display-5 fw-bold mb-3">Sẵn Sàng Bắt Đầu Trải Nghiệm?</h2>
+            <p class="lead mb-4">Đăng ký ngay hôm nay để nhận 30 ngày dùng thử hoàn toàn miễn phí.</p>
+            <a href="#" class="btn btn-light btn-lg px-5 fw-bold text-primary shadow">Trải Nghiệm Miễn Phí</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; 2026 Landing Page Practice with Bootstrap 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng JS Bootstrap 5 bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
